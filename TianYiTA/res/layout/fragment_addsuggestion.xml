@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:text="发表建议"
+        android:textSize="15dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_addsuggestion" >
+
+        <EditText
+            android:id="@+id/suggestion_to_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="这里输入消息"
+            android:padding="10dp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:padding="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="建议类型：" />
+
+        <Spinner
+            android:id="@+id/spinner_suggestionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <AbsoluteLayout
+        android:layout_width="768px"
+        android:layout_height="240px"
+        android:background="@drawable/bottom_menu"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancelSendSugggestion"
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:layout_weight="1"
+            android:layout_x="30dp"
+            android:layout_y="52dp"
+            android:background="@drawable/cancel_button" />
+
+        <Button
+            android:id="@+id/btn_sendSuggestion"
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:layout_weight="1"
+            android:layout_x="285dp"
+            android:layout_y="52dp"
+            android:background="@drawable/publish_button" />
+    </AbsoluteLayout>
+
+</LinearLayout>

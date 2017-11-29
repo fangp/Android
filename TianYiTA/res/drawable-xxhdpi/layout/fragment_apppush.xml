@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+        <ListView android:id="@+id/lv1"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_gravity="top"
+                  android:layout_weight="1.01"
+            ></ListView>
+        <AbsoluteLayout android:layout_width="768px"
+                      android:layout_height="240px"
+                      android:orientation="horizontal"
+                      android:layout_gravity="bottom"
+                      android:background="@drawable/bottom_menu"
+        >
+
+            <Button android:id="@+id/fresh_btn"
+                    android:layout_width="113px"
+                    android:layout_height="113px"
+                    android:onClick="fresh_click"
+                    android:layout_gravity="bottom"
+                android:background="@drawable/refresh_button"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="0dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="144dp"
+                android:layout_x="311dp"
+                android:layout_y="60dp" />
+
+            <Button android:id="@+id/submit_btn"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:background="@drawable/number_button"
+                    android:onClick="submit_click"
+                android:layout_below="@+id/favorite_btn"
+                android:layout_toEndOf="@+id/fresh_btn"
+                android:layout_x="242dp"
+                android:layout_y="59dp" />
+
+            <Button android:id="@+id/push_btn"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:background="@drawable/customer_button"
+                    android:onClick="push_click"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="256dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_x="93dp"
+                android:layout_y="63dp" />
+
+             <Button android:id="@+id/favorite_btn"
+                 android:layout_width="113px"
+                 android:layout_height="113px"
+                 android:background="@drawable/favor_button"
+                    android:onClick="favoradd_click"
+                 android:layout_alignParentLeft="true"
+                 android:layout_marginLeft="384dp"
+                 android:layout_alignParentTop="true"
+                 android:layout_marginTop="0dp"
+                 android:layout_x="17dp"
+                 android:layout_y="51dp" />
+        </AbsoluteLayout>
+    </LinearLayout>
+
+    

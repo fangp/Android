@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FavoriteFragment" >
+
+    <ListView android:id="@+id/lv3"
+                  android:layout_width="match_parent"
+                  android:layout_height="0dp"
+                  android:layout_gravity="top"
+                  android:layout_weight="1.02"
+            ></ListView>
+
+    <AbsoluteLayout android:layout_width="768px"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_menu" >
+
+            <Button android:id="@+id/favor_submit_btn"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:background="@drawable/number_button"
+                    android:onClick="favor_submit_click"
+                android:layout_x="305dp"
+                android:layout_y="50dp" />
+
+            <Button android:id="@+id/favor_push_btn"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:background="@drawable/customer_button"
+                    android:onClick="favor_push_click"
+                android:layout_x="240dp"
+                android:layout_y="49dp" />
+
+            <Button android:id="@+id/favor_delete_btn"
+                android:layout_width="113px"
+                android:layout_height="113px"
+                android:background="@drawable/delete_button"
+                    android:onClick="favor_delete_click"
+                android:layout_x="20dp"
+                android:layout_y="52dp" />
+        </AbsoluteLayout>
+
+</LinearLayout>

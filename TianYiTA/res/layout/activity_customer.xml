@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="321dp"
+        android:id="@+id/expandableListView"
+        android:layout_weight="1.06" />
+
+    <AbsoluteLayout android:layout_width="768px"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_menu" >
+
+    <Button
+        android:layout_width="113px"
+        android:layout_height="113px"
+        android:background="@drawable/push_button"
+        android:id="@+id/Recommend"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_x="304dp"
+        android:layout_y="50dp" />
+
+    <Button
+        android:layout_width="113px"
+        android:layout_height="113px"
+        android:background="@drawable/cancel_button"
+        android:id="@+id/Cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_x="12dp"
+        android:layout_y="54dp" />
+
+    <Button
+        android:id="@+id/AllCheck"
+        android:layout_width="113px"
+        android:layout_height="113px"
+        android:layout_alignParentEnd="true"
+        android:layout_x="82dp"
+        android:layout_y="52dp"
+        android:background="@drawable/allcheck_button" />
+
+</AbsoluteLayout>
+
+
+
+</LinearLayout>

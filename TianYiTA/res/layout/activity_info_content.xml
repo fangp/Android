@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+    	android:text="信息内容"
+    	android:textSize="15dp"
+        />
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_addsuggestion"
+        android:layout_weight="0.33">
+        
+		<TextView 
+		    android:id="@+id/tv_info_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:padding="10dp"
+		    android:background="@null" 
+        />
+		
+    </ScrollView>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:layout_weight="0.87">
+    </LinearLayout>
+
+    <AbsoluteLayout android:layout_width="768px"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_menu"
+        >
+        <Button
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:background="@drawable/back_button"
+        	android:layout_weight="1"
+        	android:onClick="back"
+            android:layout_x="17dp"
+            android:layout_y="49dp" />
+
+    </AbsoluteLayout>
+
+
+</LinearLayout>

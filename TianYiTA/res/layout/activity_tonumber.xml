@@ -1,0 +1,39 @@
+﻿<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ToNumber" >
+
+    <ListView
+        android:id="@+id/lv2"
+        android:layout_width="match_parent"
+        android:layout_height="402dp">
+    </ListView>
+
+    <AbsoluteLayout android:layout_width="768px"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_menu" >
+
+        <Button
+            android:id="@+id/add_custom_btn"
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:background="@drawable/add_button"
+            android:onClick="add_click"
+            android:layout_x="285dp"
+            android:layout_y="53dp" />
+
+        <Button
+            android:id="@+id/send_custom_btn"
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:background="@drawable/push_button"
+            android:onClick="send_click"
+            android:layout_x="23dp"
+            android:layout_y="51dp" />
+    </AbsoluteLayout>
+
+</LinearLayout>

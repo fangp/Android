@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">天翼手机助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="account">这里输入账号</string>
+    <string name="password">这里输入密码</string>
+    <string name="btn_login">登    陆</string>
+    <string name="result">这里将显示连接结果</string>
+    <string name="title_activity_zhujiemian">MainActivity</string>
+    <string name="title_activity_login">登陆</string>
+    <string name="auto_login">自动登陆</string>
+    <string name="remember_password">记住密码</string>
+    <string name="title_section1">首页</string>
+    <string name="title_section2">客户库</string>
+    <string name="title_section3">收藏夹</string>
+    <string name="title_section4">软件设置</string>
+    <string name="title_section5">信息查看</string>
+    <string name="title_section6">业务推荐</string>
+    <string name="title_section7">应用推荐</string>
+    <string name="checkSuggestion">查看建议与回复</string>
+    <string name="addSuggestion">发表建议</string>
+    <string name="Greeting">自定义问候语</string>
+    <string name="myInfo">系统信息</string>
+    <string name="logout">注销</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <drawable name="btn_login_normal">#9ef441</drawable>
+    <drawable name="btn_login_pressed">#66ff00</drawable>
+    <drawable name="set_up_pressed">#33ff99</drawable>
+
+    <string name="new_customer">添加新客户</string>
+    <string name="title_activity_new_customer">新建客户</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_favorite_fragment">收藏夹</string>
+    <string name="title_activity_fragment_readinfo">查询信息</string>
+    <string name="title_activity_fragment_info_content">信息内容</string>
+    <string name="title_activity_to_customer">推送到客户</string>
+    <string name="title_activity_fragment_business">MainActivity</string>
+    <string name="title_activity_to_number">ToNumberActivity</string>
+
+</resources>

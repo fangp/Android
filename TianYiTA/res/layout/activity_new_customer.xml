@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="359dp"
+        android:layout_weight="1.24"
+        android:orientation="vertical"
+         >
+         <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        	android:background="@drawable/bg_addsuggestion"
+        	android:layout_margin="20dp"
+             >
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editCName"
+                android:hint="姓名（必填）"
+                android:padding="20dp"
+                android:background="@null" />
+
+            
+			<View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editCPhoneNumber1"
+                android:hint="手机号码（必填）"
+                android:padding="20dp"
+                android:background="@null" />
+			<View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="?android:attr/listDivider" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:id="@+id/editCPhoneNumber2"
+                android:hint="手机号码"
+                android:padding="20dp"
+                android:background="@null" />
+			<View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="?android:attr/listDivider" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:ems="10"
+                android:padding="20dp"
+                android:id="@+id/editCPhoneNumber3"
+                android:hint="手机号码"
+                android:background="@null" />
+            <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.5dp"
+            android:background="?android:attr/listDivider" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editCPhoneModel"
+                android:hint="手机型号"
+                android:padding="20dp"
+                android:background="@null" />
+             
+         </LinearLayout>
+
+           
+    </LinearLayout>
+
+    <AbsoluteLayout android:layout_width="768px"
+        android:layout_height="240px"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_menu"
+        >
+        <Button
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:background="@drawable/cancel_button"
+            android:id="@+id/CCancel"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:onClick="clickHandler_Cancel"
+            android:layout_x="36dp"
+            android:layout_y="54dp" />
+
+        <Button
+            android:layout_width="113px"
+            android:layout_height="113px"
+            android:background="@drawable/save_button"
+            android:id="@+id/CComplete"
+            android:layout_alignTop="@+id/CCancel"
+            android:layout_alignParentEnd="true"
+            android:onClick="clickHandler_Complete"
+            android:layout_x="285dp"
+            android:layout_y="55dp" />
+    </AbsoluteLayout>
+
+</LinearLayout>
